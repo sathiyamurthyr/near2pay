@@ -1,6 +1,6 @@
 export const COMPANY_DETAILS = {
   name: "Sathus Technology Pvt. Ltd.",
-  brand: "Near2Pay",
+  brand: "Near4Pay",
   legalName: "Sathus Technology Pvt. Ltd.",
   hq: {
     label: "Corporate Headquarters (HQ)",

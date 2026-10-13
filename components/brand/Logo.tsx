@@ -19,7 +19,7 @@ export const Logo: React.FC<LogoProps> = ({
     <Link
       href="/"
       className={`inline-flex items-center gap-3 group focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-burgundy rounded-lg ${className}`}
-      aria-label="Near2Pay by Sathus Technology - Home"
+      aria-label="Near4Pay by Sathus Technology - Home"
     >
       <div
         className="relative flex-shrink-0 transition-transform duration-200 group-hover:scale-105"
@@ -27,7 +27,7 @@ export const Logo: React.FC<LogoProps> = ({
       >
         <Image
           src="/brand/logo.svg"
-          alt="Near2Pay emblem"
+          alt="Near4Pay emblem"
           width={iconSize}
           height={iconSize}
           priority
@@ -38,7 +38,7 @@ export const Logo: React.FC<LogoProps> = ({
       <div className="flex flex-col">
         <div className="flex items-center">
           <span className="font-display font-extrabold text-2xl tracking-tight text-brand-burgundy leading-none">
-            Near<span className="text-brand-orange">2</span>Pay
+            Near<span className="text-brand-orange">4</span>Pay
           </span>
         </div>
         {showTagline && (

@@ -203,7 +203,7 @@ export const FeePaymentWorkflowDemo: React.FC = () => {
                 Step 1: Select Your Educational Institution
               </h3>
               <p className="text-sm text-neutral-secondary mt-1">
-                Choose from sample schools, colleges, or coaching centres registered on Near2Pay.
+                Choose from sample schools, colleges, or coaching centres registered on Near4Pay.
               </p>
             </div>
 
@@ -521,7 +521,7 @@ export const FeePaymentWorkflowDemo: React.FC = () => {
                     Simulated Gateway Checkout
                   </span>
                   <h4 className="font-bold text-neutral-primary text-base">
-                    Near2Pay Sandbox Rail • {selectedInstitution?.name}
+                    Near4Pay Sandbox Rail • {selectedInstitution?.name}
                   </h4>
                 </div>
                 <div className="text-right">
@@ -541,7 +541,7 @@ export const FeePaymentWorkflowDemo: React.FC = () => {
                     Demonstration UPI Dynamic QR Code • Auto-verified upon scanning
                   </div>
                   <div className="text-xs font-mono bg-white px-3 py-1 rounded-md border border-surface-border">
-                    near2pay.demo@sathuspe
+                    near4pay.demo@sathuspe
                   </div>
                 </div>
               )}
@@ -652,7 +652,7 @@ export const FeePaymentWorkflowDemo: React.FC = () => {
                 </div>
                 <div className="text-right">
                   <div className="font-display font-extrabold text-lg text-brand-burgundy">
-                    Near<span className="text-brand-orange">2</span>Pay
+                    Near<span className="text-brand-orange">4</span>Pay
                   </div>
                   <span className="text-[10px] text-neutral-secondary">Sathus Technology</span>
                 </div>

@@ -6,13 +6,13 @@ import { Footer } from "@/components/layout/Footer";
 export const metadata: Metadata = {
   metadataBase: new URL("https://near2pay.com"),
   title: {
-    default: "Near2Pay — Education Fee Payment Platform for Indian Institutions",
-    template: "%s | Near2Pay by Sathus Technology",
+    default: "Near4Pay — Education Fee Payment Platform for Indian Institutions",
+    template: "%s | Near4Pay by Sathus Technology",
   },
   description:
-    "Near2Pay by Sathus Technology Pvt. Ltd. simplifies fee payments and collections for Indian schools, colleges, and coaching centres with instant digital receipts, multi-rail UPI payments, and automated reconciliations.",
+    "Near4Pay by Sathus Technology Pvt. Ltd. simplifies fee payments and collections for Indian schools, colleges, and coaching centres with instant digital receipts, multi-rail UPI payments, and automated reconciliations.",
   keywords: [
-    "Near2Pay",
+    "Near4Pay",
     "Sathus Technology",
     "school fee payment online India",
     "college semester fee payment",
@@ -33,16 +33,16 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_IN",
     url: "https://near2pay.com",
-    title: "Near2Pay — Education Fee Payment Platform for Indian Institutions",
+    title: "Near4Pay — Education Fee Payment Platform for Indian Institutions",
     description:
       "Enterprise education fee management and digital collection platform built by Sathus Technology Pvt. Ltd. for Indian schools, colleges, and coaching centres.",
-    siteName: "Near2Pay",
+    siteName: "Near4Pay",
     images: [
       {
         url: "/brand/logo.png",
         width: 1200,
         height: 630,
-        alt: "Near2Pay by Sathus Technology",
+        alt: "Near4Pay by Sathus Technology",
       },
     ],
   },
@@ -86,7 +86,7 @@ export default function RootLayout({
       {
         "@type": "SoftwareApplication",
         "@id": "https://near2pay.com/#software",
-        "name": "Near2Pay",
+        "name": "Near4Pay",
         "operatingSystem": "Web",
         "applicationCategory": "EducationalApplication, BusinessApplication",
         "publisher": {

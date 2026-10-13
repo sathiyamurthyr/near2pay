@@ -30,9 +30,9 @@ import { FaqAccordion } from "@/components/interactive/FaqAccordion";
 import { INDIAN_IMAGES } from "@/data/images";
 
 export const metadata = {
-  title: "Near2Pay — Simplified Education Fee Payments for Indian Institutions",
+  title: "Near4Pay — Simplified Education Fee Payments for Indian Institutions",
   description:
-    "Near2Pay by Sathus Technology Pvt. Ltd. empowers Indian schools, colleges, and coaching centres with instant UPI fee collections, automated bank reconciliation, and digital receipts.",
+    "Near4Pay by Sathus Technology Pvt. Ltd. empowers Indian schools, colleges, and coaching centres with instant UPI fee collections, automated bank reconciliation, and digital receipts.",
 };
 
 export default function HomePage() {
@@ -62,7 +62,7 @@ export default function HomePage() {
               </h1>
 
               <p className="text-lg sm:text-xl text-neutral-secondary leading-relaxed max-w-2xl">
-                Near2Pay connects Indian schools, colleges, and coaching centres with parents and students through seamless UPI fee collections, instant digital receipts, and real-time bank reconciliation.
+                Near4Pay connects Indian schools, colleges, and coaching centres with parents and students through seamless UPI fee collections, instant digital receipts, and real-time bank reconciliation.
               </p>
 
               {/* Action Buttons */}
@@ -134,7 +134,7 @@ export default function HomePage() {
           <SectionHeader
             badge="Tailored Solutions"
             title="Customized Fee Systems for Every Educational Segment"
-            subtitle="Whether managing school bus routes, university semester credits, or coaching test-series instalments, Near2Pay accommodates your institutional workflows."
+            subtitle="Whether managing school bus routes, university semester credits, or coaching test-series instalments, Near4Pay accommodates your institutional workflows."
           />
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
@@ -333,7 +333,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeader
             badge="Live Interactive Experience"
-            title="Experience the Near2Pay Student Fee Journey"
+            title="Experience the Near4Pay Student Fee Journey"
             subtitle="Try out the interactive student payment simulation below. Select an institution, review fee breakdown, and generate a sample digital receipt."
           />
 
@@ -352,7 +352,7 @@ export default function HomePage() {
                   Institutional Security, Data Privacy & RBI Compliance Principles
                 </h3>
                 <p className="text-sm text-neutral-secondary leading-relaxed">
-                  Near2Pay is designed to respect the highest standards of student data confidentiality.
+                  Near4Pay is designed to respect the highest standards of student data confidentiality.
                   Our proposed architecture incorporates 256-bit encryption, role-based access for school staff,
                   and alignment with Reserve Bank of India (RBI) payment aggregator security guidelines.
                 </p>
@@ -390,7 +390,7 @@ export default function HomePage() {
           <SectionHeader
             badge="Frequently Asked Questions"
             title="Common Questions from Parents & Administrators"
-            subtitle="Get clear answers about payment methods, digital receipt validity, and the Near2Pay onboarding roadmap."
+            subtitle="Get clear answers about payment methods, digital receipt validity, and the Near4Pay onboarding roadmap."
           />
 
           <FaqAccordion limit={5} />
@@ -420,7 +420,7 @@ export default function HomePage() {
           </h2>
 
           <p className="text-base sm:text-lg text-neutral-secondary max-w-2xl mx-auto leading-relaxed">
-            Join educational institutions across India exploring faster fee collections, zero reconciliation delays, and delighted parents with Near2Pay by Sathus Technology.
+            Join educational institutions across India exploring faster fee collections, zero reconciliation delays, and delighted parents with Near4Pay by Sathus Technology.
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-4 pt-2">

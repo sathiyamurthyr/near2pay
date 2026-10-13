@@ -54,7 +54,7 @@ export const Footer: React.FC = () => {
           <div className="lg:col-span-2 space-y-4">
             <Logo size="md" />
             <p className="text-sm text-neutral-secondary leading-relaxed max-w-sm">
-              Near2Pay is a next-generation education fee payment and reconciliation platform engineered by{" "}
+              Near4Pay is a next-generation education fee payment and reconciliation platform engineered by{" "}
               <strong className="text-neutral-primary font-semibold">Sathus Technology Pvt. Ltd.</strong> for schools, colleges, and coaching institutes across India.
             </p>
 
@@ -237,7 +237,7 @@ export const Footer: React.FC = () => {
             <Lock className="w-3.5 h-3.5 text-brand-orangeDark" />
             Demonstration Release Notice
           </p>
-          Near2Pay is an enterprise software product developed by{" "}
+          Near4Pay is an enterprise software product developed by{" "}
           <strong>Sathus Technology Pvt. Ltd.</strong> This website is an interactive demonstration of
           the upcoming education fee management platform. All student records, institution metrics,
           and payment journey simulations use synthetic data for illustrative purposes. No real bank
@@ -246,7 +246,7 @@ export const Footer: React.FC = () => {
 
         {/* Bottom Bar */}
         <div className="mt-8 pt-8 border-t border-surface-border flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-neutral-secondary">
-          <p>© {new Date().getFullYear()} Near2Pay by Sathus Technology Pvt. Ltd. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Near4Pay by Sathus Technology Pvt. Ltd. All rights reserved.</p>
           <div className="flex items-center gap-6">
             <Link href="/privacy-policy" className="hover:text-brand-burgundy">
               Privacy

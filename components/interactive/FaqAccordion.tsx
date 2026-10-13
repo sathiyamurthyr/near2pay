@@ -16,28 +16,28 @@ export const FAQS_DATA: FaqItem[] = [
   {
     id: "faq-1",
     category: "General",
-    question: "What is Near2Pay and what is its objective?",
+    question: "What is Near4Pay and what is its objective?",
     answer:
-      "Near2Pay is an enterprise education fee payment and reconciliation platform engineered by Sathus Technology Pvt. Ltd. Its primary objective is to modernize the educational fee lifecycle in India—eliminating physical cash handling, long bank queues, and tedious manual accounting for schools, colleges, and coaching institutes.",
+      "Near4Pay is an enterprise education fee payment and reconciliation platform engineered by Sathus Technology Pvt. Ltd. Its primary objective is to modernize the educational fee lifecycle in India—eliminating physical cash handling, long bank queues, and tedious manual accounting for schools, colleges, and coaching institutes.",
   },
   {
     id: "faq-2",
     category: "General",
-    question: "Which institutions is Near2Pay intended for?",
+    question: "Which institutions is Near4Pay intended for?",
     answer:
-      "Near2Pay is specifically tailored for Indian K-12 schools (CBSE, ICSE, and State Boards), degree colleges and autonomous universities, as well as competitive exam coaching academies and test-prep centres across Tier 1, Tier 2, and Tier 3 cities.",
+      "Near4Pay is specifically tailored for Indian K-12 schools (CBSE, ICSE, and State Boards), degree colleges and autonomous universities, as well as competitive exam coaching academies and test-prep centres across Tier 1, Tier 2, and Tier 3 cities.",
   },
   {
     id: "faq-3",
     category: "Parents & Students",
     question: "How do students and parents access and pay their fees?",
     answer:
-      "Parents and students simply visit the Near2Pay portal or their institution's branded payment page, select their school or college, and input the student's admission or roll number. The system retrieves verified fee dues, allows selection of terms or optional components (such as transport or lab fees), and facilitates instant checkout via UPI, RuPay, cards, or Net Banking.",
+      "Parents and students simply visit the Near4Pay portal or their institution's branded payment page, select their school or college, and input the student's admission or roll number. The system retrieves verified fee dues, allows selection of terms or optional components (such as transport or lab fees), and facilitates instant checkout via UPI, RuPay, cards, or Net Banking.",
   },
   {
     id: "faq-4",
     category: "Payments & Receipts",
-    question: "Which payment methods and rails are planned for Near2Pay?",
+    question: "Which payment methods and rails are planned for Near4Pay?",
     answer:
       "The planned production payment architecture will support multi-rail Indian payment instruments: UPI (PhonePe, Google Pay, Paytm, BHIM, and bank UPI apps), RuPay debit and credit cards, major Visa and Mastercard cards, Net Banking across 50+ Indian scheduled banks, and planned Bharat Bill Payment System (BBPS) integration.",
     isPlanned: true,
@@ -47,7 +47,7 @@ export const FAQS_DATA: FaqItem[] = [
     category: "Payments & Receipts",
     question: "How do digital receipts and fee tracking work?",
     answer:
-      "Immediately upon payment confirmation, Near2Pay generates a tamper-evident digital receipt featuring the institution's official letterhead, unique transaction reference, student particulars, fee breakdown, and a verification QR code. Parents can download or print the PDF receipt instantly and receive an automated copy via SMS/WhatsApp.",
+      "Immediately upon payment confirmation, Near4Pay generates a tamper-evident digital receipt featuring the institution's official letterhead, unique transaction reference, student particulars, fee breakdown, and a verification QR code. Parents can download or print the PDF receipt instantly and receive an automated copy via SMS/WhatsApp.",
     isPlanned: true,
   },
   {
