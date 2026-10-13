@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-burgundy: #A20A3A;
+  --color-burgundy-dark: #85072F;
+  --color-burgundy-light: #FFF0F4;
+  --color-orange: #FF9933;
+  --color-orange-dark: #F47216;
+  --color-orange-light: #FFF7ED;
+  --color-text-primary: #292329;
+  --color-text-secondary: #625B60;
+  --color-border: #E8E2E5;
+  --color-surface-subtle: #FAF8F9;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    background-color: #FFFFFF;
+    color: #292329;
+  }
+
+  body {
+    background-color: #FFFFFF;
+    color: #292329;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background-color: #A20A3A;
+    color: #FFFFFF;
+  }
+}
+
+/* Custom utility classes */
+.bg-gradient-brand {
+  background: linear-gradient(135deg, #A20A3A 0%, #85072F 100%);
+}
+
+.text-gradient-brand {
+  background: linear-gradient(135deg, #A20A3A 0%, #F47216 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.brand-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  background-color: #FFF0F4;
+  color: #A20A3A;
+  border: 1px solid rgba(162, 10, 58, 0.2);
+}
+
+.brand-badge-orange {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  background-color: #FFF7ED;
+  color: #F47216;
+  border: 1px solid rgba(244, 114, 22, 0.2);
+}
