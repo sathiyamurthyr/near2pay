@@ -52,6 +52,8 @@ export const metadata: Metadata = {
   },
 };
 
+import { AuthProvider } from "@/lib/auth/useAuth";
+
 export default function RootLayout({
   children,
 }: {
@@ -107,9 +109,11 @@ export default function RootLayout({
         />
       </head>
       <body className="font-sans antialiased bg-white text-neutral-primary min-h-screen flex flex-col">
-        <Navbar />
-        <main className="flex-grow">{children}</main>
-        <Footer />
+        <AuthProvider>
+          <Navbar />
+          <main className="flex-grow">{children}</main>
+          <Footer />
+        </AuthProvider>
       </body>
     </html>
   );

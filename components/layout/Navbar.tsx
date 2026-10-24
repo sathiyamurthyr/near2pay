@@ -17,12 +17,16 @@ import {
   HelpCircle,
   PhoneCall,
   Sparkles,
+  User as UserIcon,
+  LogOut,
 } from "lucide-react";
 import { Logo } from "../brand/Logo";
 import { Button } from "../ui/Button";
+import { useAuth } from "@/lib/auth/useAuth";
 
 export const Navbar: React.FC = () => {
   const pathname = usePathname();
+  const { user, logout } = useAuth();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [solutionsDropdownOpen, setSolutionsDropdownOpen] = useState(false);
   const [moreDropdownOpen, setMoreDropdownOpen] = useState(false);
@@ -274,14 +278,45 @@ export const Navbar: React.FC = () => {
           </nav>
 
           {/* Right Action CTAs */}
-          <div className="hidden lg:flex items-center gap-3">
-            <Button
-              href="/request-demo"
-              variant="outline"
-              size="sm"
-            >
-              Request a Demo
-            </Button>
+          <div className="hidden lg:flex items-center gap-2 xl:gap-3">
+            {user ? (
+              <div className="flex items-center gap-2">
+                <Link
+                  href="/account"
+                  className="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold rounded-lg bg-surface-subtle border border-surface-border hover:border-brand-burgundy/40 text-neutral-primary transition-colors"
+                  id="nav-account-btn"
+                >
+                  <UserIcon className="w-3.5 h-3.5 text-brand-burgundy" />
+                  <span>{user.name.split(" ")[0]}</span>
+                </Link>
+                <button
+                  type="button"
+                  onClick={logout}
+                  id="nav-logout-btn"
+                  className="p-1.5 text-neutral-secondary hover:text-rose-600 rounded-lg hover:bg-rose-50 transition-colors"
+                  title="Sign Out"
+                >
+                  <LogOut className="w-4 h-4" />
+                </button>
+              </div>
+            ) : (
+              <div className="flex items-center gap-2">
+                <Link
+                  href="/login"
+                  id="nav-login-btn"
+                  className="px-3 py-1.5 text-xs font-semibold text-neutral-primary hover:text-brand-burgundy transition-colors"
+                >
+                  Sign In
+                </Link>
+                <Link
+                  href="/register"
+                  id="nav-register-btn"
+                  className="px-3 py-1.5 text-xs font-semibold rounded-lg border border-surface-border hover:border-brand-burgundy/40 text-neutral-primary transition-colors"
+                >
+                  Register
+                </Link>
+              </div>
+            )}
             <Button
               href="/student-parent-payments"
               variant="primary"
@@ -455,7 +490,49 @@ export const Navbar: React.FC = () => {
               </Link>
             </div>
 
-            <div className="pt-4 border-t border-surface-border space-y-3">
+            {/* Mobile Auth Actions */}
+            {user ? (
+              <div className="pt-3 border-t border-surface-border space-y-2">
+                <Link
+                  href="/account"
+                  className="flex items-center gap-2 px-3 py-2 text-sm font-semibold text-neutral-primary hover:text-brand-burgundy rounded-lg hover:bg-surface-subtle"
+                >
+                  <UserIcon className="w-4 h-4 text-brand-burgundy" />
+                  <span>My Account ({user.name})</span>
+                </Link>
+                <Link
+                  href="/account/orders"
+                  className="flex items-center gap-2 px-3 py-2 text-sm text-neutral-primary hover:text-brand-burgundy rounded-lg hover:bg-surface-subtle"
+                >
+                  <span>Order & Fee Receipts</span>
+                </Link>
+                <button
+                  type="button"
+                  onClick={logout}
+                  className="flex items-center gap-2 w-full px-3 py-2 text-sm text-rose-600 hover:bg-rose-50 rounded-lg text-left"
+                >
+                  <LogOut className="w-4 h-4" />
+                  <span>Sign Out</span>
+                </button>
+              </div>
+            ) : (
+              <div className="pt-3 border-t border-surface-border grid grid-cols-2 gap-2">
+                <Link
+                  href="/login"
+                  className="px-3 py-2 text-center text-sm font-semibold rounded-lg border border-surface-border text-neutral-primary hover:border-brand-burgundy"
+                >
+                  Sign In
+                </Link>
+                <Link
+                  href="/register"
+                  className="px-3 py-2 text-center text-sm font-semibold rounded-lg bg-brand-burgundyLight text-brand-burgundy hover:bg-brand-burgundy/15"
+                >
+                  Register
+                </Link>
+              </div>
+            )}
+
+            <div className="pt-2 space-y-2">
               <Button
                 href="/request-demo"
                 variant="outline"

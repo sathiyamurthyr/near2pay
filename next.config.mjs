@@ -5,6 +5,9 @@ const nextConfig = {
     domains: ["images.unsplash.com"],
     unoptimized: true,
   },
+  experimental: {
+    serverComponentsExternalPackages: ["node:sqlite"],
+  },
 };
 
 export default nextConfig;
